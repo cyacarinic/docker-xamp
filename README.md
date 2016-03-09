@@ -24,16 +24,19 @@ $ docker-machine ls
 ```
 
 
-
 ### BUILD:
 
 ```sh
 $ docker-compose build
 $ docker-compose up -d
-$ sh dumps/init_tables.sh
-$ docker exec dockerpoder_db_1 sh restore/dump.sh
 ```
+
 ### TESTING:
+Verificar si el docker está corriendo
+```
+$ docker-compose ps
+```
+
 
 * "XXX" de la ip varía dependiendo de la VM (100, 101, 102...)
 
@@ -44,6 +47,12 @@ SSH
 ```
 $ ssh root@192.168.99.XXX -p 41061
 > pass : root
+```
+
+### STOP:
+
+```sh
+$ docker-compose stop
 ```
 
 =)
