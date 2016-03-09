@@ -1,4 +1,4 @@
-api:
+xamp:
     build: ./XAMP
     command: sh /startup.sh
     environment:
@@ -9,4 +9,4 @@ api:
         - "41061:22"
         - "41062:80"
     volumes:
-      - ./my_pages:/www/
+      - ./my_pages:/opt/lampp/htdocs/www/

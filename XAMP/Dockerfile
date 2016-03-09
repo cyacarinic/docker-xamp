@@ -18,8 +18,8 @@ RUN mv /opt/lampp/etc/extra/httpd-xampp.conf.new /opt/lampp/etc/extra/httpd-xamp
 
 # Create a /www folder and a symbolic link to it in /opt/lampp/htdocs. It'll be accessible via http://localhost:[port]/www/
 # This is convenient because it doesn't interfere with xampp, phpmyadmin or other tools in /opt/lampp/htdocs
-RUN mkdir /www
-RUN ln -s /www /opt/lampp/htdocs/
+# RUN mkdir /www
+# RUN ln -s /www /opt/lampp/htdocs/
 
 # SSH server
 RUN apt-get install -y -q supervisor openssh-server
