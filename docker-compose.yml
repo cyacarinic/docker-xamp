@@ -1,0 +1,12 @@
+api:
+    build: ./XAMP
+    command: sh /startup.sh
+    environment:
+      DEBUG: false
+      LANG: "es_ES.UTF-8"
+      LANGUAGE: "es_ES.UTF-8"
+    ports:
+        - "41061:22"
+        - "41062:80"
+    volumes:
+      - ./my_pages:/www/
