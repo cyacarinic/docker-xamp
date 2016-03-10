@@ -23,6 +23,12 @@ Verificar que "MY_DOCKER" este seleccionado (aparece un '*' al lado de su nombre
 $ docker-machine ls
 ```
 
+### CLONAR REPO:
+
+```sh
+$ git clone https://github.com/cyacarinic/docker-xamp.git
+$ cd docker-xamp
+```
 
 ### BUILD:
 
